@@ -1,7 +1,7 @@
 <ion-view title="{{event.name}}">
   <ion-content has-header="true" padding="false">
   <!-- <div class="card"> -->
-   	<a class="item item-avatar" href="#/tab/friend/{{friend.id}}">
+   	<a class="item item-avatar item-text-wrap" href="#/tab/friend/{{friend.id}}">
       <img src="{{event.avatar}}">
   		Event Created by: {{event.host}}
   		<br>Overall Rating: 10/10 Would party again
@@ -9,7 +9,7 @@
   	<div class="item item-divider">
     	Information
  	</div>
-  	<div class="item item-body">
+  	<div class="item item-body item-text-wrap">
 	  	Time: {{event.date}} {{event.time}}
 	  	<br>Location: {{event.place}} <i class="icon ion-ios7-location"></i>
 	  	<br>Description: {{event.description}}
