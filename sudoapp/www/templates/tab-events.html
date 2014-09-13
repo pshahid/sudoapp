@@ -1,7 +1,7 @@
 <ion-view title="Events">
   <ion-content class="padding">
     <ion-list>
-    	<div class="bar bar-header">
+    	<div class="item item-divider">
 		  Hosted by You
 		</div>
 		<ion-item ng-repeat="event in events">
@@ -13,7 +13,7 @@
 		      <span class="badge badge-balanced">{{event.guests}}</span>
 		    </a>
 		</ion-item>
-		<div class="bar bar-header">
+		<div class="item item-divider">
 	    	Invited To
 	  	</div>
 	  	<ion-item ng-repeat="event in events">
@@ -24,7 +24,7 @@
 		      <span class="badge badge-balanced">{{event.guests}}</span>
 		    </a>
 		</ion-item>
-		<div class="bar bar-header">
+		<div class="item item-divider">
 	    	Public
 	  	</div>
 	  	<ion-item ng-repeat="event in events">
