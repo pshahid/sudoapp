@@ -36,7 +36,7 @@ angular.module('starter.services', [])
       place: 'Big Gun', 
       guests: '4',
       description: 'Guys the burgers are half off until 6. They are delicious and we should go eat them.',
-      avatar: '/img/avatars/pjs.jpg'
+      avatar: 'img/avatars/pjs.jpg'
   },
     { id: 1, 
       name: 'Hang Out', 
@@ -46,7 +46,7 @@ angular.module('starter.services', [])
       place: 'Smoking Lamp', 
       guests: '2',
       description: 'none',
-      avatar: '/img/avatars/ronak.jpg' 
+      avatar: 'img/avatars/ronak.jpg' 
     },
     { id: 2, 
       name: 'Get Drunk', 
@@ -56,7 +56,7 @@ angular.module('starter.services', [])
       place: 'Bier Garten', 
       guests: '19',
       description: 'none',
-      avatar: '/img/avatars/luke.jpg' 
+      avatar: 'img/avatars/luke.jpg' 
     },
     { id: 3, 
       name: 'Barcamp', 
@@ -66,7 +66,7 @@ angular.module('starter.services', [])
       place: 'Harbor Walk', 
       guests: '8',
       description: 'none',
-      avatar: '/img/avatars/ryry.jpg'
+      avatar: 'img/avatars/ryry.jpg'
     }
   ];
 
