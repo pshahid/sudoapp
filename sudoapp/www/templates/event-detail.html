@@ -1,0 +1,40 @@
+<ion-view title="{{event.name}}">
+  <ion-content has-header="true" padding="true">
+  <div class="card">
+   	<a class="item item-avatar" href="#/tab/friend/{{friend.id}}">
+      <img src="{{event.avatar}}">
+  		Event Created by: {{event.host}}
+  		<br>Overall Rating: 10/10 Would party again
+  	</a>
+  	<div class="item item-divider">
+    	Information
+ 	</div>
+  	<div class="item item-body">
+	  	Time: {{event.date}} {{event.time}}
+	  	<br>Location: {{event.place}} <i class="icon ion-ios7-location">//Eventually link location to map</i>
+	  	<br>Description: {{event.description}}
+  	</div>
+  	<div class="item item-divider">
+   		Who's Going
+  	</div>
+  	<div class="list list">
+  		<a href="#" class="item item-icon-left">
+	    	<i class="icon ion-person"></i>
+	    	Attendee
+	  	</a>
+	  	<a href="#" class="item item-icon-left">
+	    	<i class="icon ion-person"></i>
+	    	Attendee
+	  	</a>
+	  	<a href="#" class="item item-icon-left">
+	    <i class="icon ion-person"></i>
+	    	Attendee
+	  	</a>
+	  	<a href="#" class="item item-icon-left">
+	    	<i class="icon ion-person"></i>
+	    	Attendee
+	  	</a>
+  	</div>
+  </div>
+  </ion-content>
+</ion-view>
