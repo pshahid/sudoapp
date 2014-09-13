@@ -1,6 +1,11 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeCtrl', function($scope) {
+.controller('EventCtrl', function($scope, Events) {
+	$scope.events = Events.all();
+})
+
+.controller('EventDetailCtrl', function($scope, $stateParams, Events) {
+  $scope.event = Events.get($stateParams.eventId);
 })
 
 .controller('FriendsCtrl', function($scope, Friends) {
@@ -14,3 +19,5 @@ angular.module('starter.controllers', [])
 .controller('SettingsCtrl', function($scope) {
 	// $scope.doSomething = function();
 });
+
+
