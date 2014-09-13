@@ -11,6 +11,16 @@ angular.module('starter.controllers', [])
   $scope.friend = Friends.get($stateParams.friendId);
 })
 
+.controller('LoginPageCtrl', function($scope, $location){
+  
+  $scope.loginFacebook = function(){
+    $location.url('/tab/home');
+  }
+  $scope.loginInstagram = function(){
+    $location.url('/tab/home');
+  }
+})
+
 .controller('SettingsCtrl', function($scope) {
 	// $scope.doSomething = function();
 });
