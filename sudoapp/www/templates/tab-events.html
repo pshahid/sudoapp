@@ -1,0 +1,42 @@
+<ion-view title="Events">
+  <ion-content class="padding">
+    <h1>List of Events</h1>
+    <ion-list>
+    	<div class="item item-divider">
+		  Hosted by You
+		</div>
+		<ion-item ng-repeat="event in events">
+			<!-- <i class="icon ion-person"></i> event {{event.id}} -->
+			<a class="item item-avatar" href="#/tab/events/{{event.id}}">
+		      <img src="{{event.avatar}}">
+		      <h2>{{event.name}}</h2>
+		      <p>{{event.date}} {{event.time}} @ {{event.place}}</p>
+		      <span class="badge badge-balanced">{{event.guests}}</span>
+		    </a>
+		</ion-item>
+		<div class="item item-divider">
+	    	Invited To
+	  	</div>
+	  	<ion-item ng-repeat="event in events">
+			<a class="item item-avatar" href="#/tab/events/{{event.id}}">
+		      <img src="{{event.avatar}}">
+		      <h2>{{event.name}}</h2>
+		      <p>{{event.date}} {{event.time}} @ {{event.place}}</p>
+		      <span class="badge badge-balanced">{{event.guests}}</span>
+		    </a>
+		</ion-item>
+		<div class="item item-divider">
+	    	Public
+	  	</div>
+	  	<ion-item ng-repeat="event in events">
+			<a class="item item-avatar" href="#/tab/events/{{event.id}}">
+		      <img src="{{event.avatar}}">
+		      <h2>{{event.name}}</h2>
+		      <p>{{event.date}} {{event.time}} @ {{event.place}}</p>
+		      <span class="badge badge-balanced">{{event.guests}}</span>
+		    </a>
+		</ion-item>
+	</ion-list>  
+  </ion-content>
+</ion-view>
+

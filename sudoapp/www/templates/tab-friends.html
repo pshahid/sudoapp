@@ -1,12 +1,8 @@
-<ion-nav-bar class="bar bar-header bar-balanced" animation="nav-title-slide-ios7"></ion-nav-bar>
 <ion-view title="Friends">
-<ion-nav-buttons side="right">
-<button class="button button-clear icon-left icon ion-ios7-wineglass"><i class="icon ion-plus-round"></i></button>
-</ion-nav-buttons>
 	<ion-content>
 		<ion-list>
 			<ion-item ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/friend/{{friend.id}}">
-			{{friend.name}}
+				{{friend.name}}
 			</ion-item>
 		</ion-list>
 	</ion-content>

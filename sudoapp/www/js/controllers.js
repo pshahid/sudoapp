@@ -1,6 +1,11 @@
 angular.module('starter.controllers', [])
 
-.controller('HomeCtrl', function($scope) {
+.controller('EventCtrl', function($scope, Events) {
+	$scope.events = Events.all();
+})
+
+.controller('EventDetailCtrl', function($scope, $stateParams, Events) {
+  $scope.event = Events.get($stateParams.eventId);
 })
 
 .controller('FriendsCtrl', function($scope, Friends) {
@@ -14,13 +19,15 @@ angular.module('starter.controllers', [])
 .controller('LoginPageCtrl', function($scope, $location){
   
   $scope.loginFacebook = function(){
-    $location.url('/tab/home');
+    $location.url('/tab/events');
   }
   $scope.loginInstagram = function(){
-    $location.url('/tab/home');
+    $location.url('/tab/events');
   }
 })
 
 .controller('SettingsCtrl', function($scope) {
 	// $scope.doSomething = function();
 });
+
+
