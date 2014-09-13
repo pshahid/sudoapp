@@ -3,8 +3,8 @@ angular.module('starter.controllers', [])
 .controller('HomeCtrl', function($scope) {
 })
 
-.controller('EventsCtrl', function($scope) {
-  // $scope.friends = Friends.all();
+.controller('FriendsCtrl', function($scope, Friends) {
+  $scope.friends = Friends.all();
 })
 
 .controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
@@ -12,4 +12,5 @@ angular.module('starter.controllers', [])
 })
 
 .controller('SettingsCtrl', function($scope) {
+	// $scope.doSomething = function();
 });

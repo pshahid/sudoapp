@@ -48,12 +48,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-    .state('tab.events', {
-      url: '/events',
+    .state('tab.friends', {
+      url: '/friends',
       views: {
-        'tab-events': {
-          templateUrl: 'templates/tab-events.html',
-          controller: 'EventsCtrl'
+        'tab-friends': {
+          templateUrl: 'templates/tab-friends.html',
+          controller: 'FriendsCtrl'
         }
       }
     })
