@@ -3,12 +3,15 @@
     	<div class="item item-divider" padding="false">
 		  Hosted by You
 		</div>
-		<ion-item ng-repeat="event in events" class="item-thumbnail-left item-text-wrap">
-			<a class="item-thumbnail-left" href="#/tab/events/{{event.id}}">
-		      <img ng-src="{{event.avatar}}">
-		      <h2>{{event.name}}</h2>
-		      <p>{{event.date}} {{event.time}} @ {{event.place}}</p>
-		      <span class="badge badge-balanced">{{event.guests}}</span>
+		<ion-item ng-repeat="event in events" class="item-text-wrap" style="padding-bottom:0px; padding-left:0px;">
+			<a href="#/tab/events/{{event.id}}">
+		      <div class="item-thumbnail-left"><img ng-src="{{event.avatar}}">
+		      <div style="padding:0px;">
+			      <h2 style="font-weight:bold; font-size:20px;">{{event.name}}</h2>
+			      <p>{{event.date}} {{event.time}} @ {{event.place}}</p>
+			      <span class="badge badge-balanced">{{event.guests}}</span>
+		  		</div>
+		  		</div>
 		    </a>
 		</ion-item>
 		<div class="item item-divider">
