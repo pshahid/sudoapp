@@ -19,10 +19,10 @@ angular.module('starter.controllers', [])
 .controller('LoginPageCtrl', function($scope, $location){
   
   $scope.loginFacebook = function(){
-    $location.url('/tab/home');
+    $location.url('/tab/events');
   }
   $scope.loginInstagram = function(){
-    $location.url('/tab/home');
+    $location.url('/tab/events');
   }
 })
 
