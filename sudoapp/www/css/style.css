@@ -1,6 +1,6 @@
 .item-thumbnail-left, .item-thumbnail-left .item-content {
   padding-left: 90px;
-  min-height: 100px; }
+  min-height: 80px; }
 .item-thumbnail-left > img:first-child, .item-thumbnail-left .item-image, .item-thumbnail-left .item-content > img:first-child, .item-thumbnail-left .item-content .item-image {
     position: absolute;
     top: 20px;
@@ -12,14 +12,9 @@
 .item-avatar.item-complex, .item-avatar-left.item-complex, .item-thumbnail-left.item-complex {
   padding-left: 0; }
 
-.boop {
-	position: absolute;
-	color: #000;
-  	font-weight: 500;
-  	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  	line-height: .95px;
-  	text-align: left;
-  	font-size: 25px;
+.p5 {
+	padding-right: 5px;
+	padding-left: 2px;
 }
 
 a {
