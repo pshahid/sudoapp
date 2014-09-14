@@ -1,0 +1,70 @@
+<ion-view title="New Event">
+  <ion-content>
+  	<div class="item item-divider">
+   		Information
+  	</div>
+  	<div class="list" style="margin-bottom:0px;">
+  		<label class="item item-input">
+  			<i class="icon ion-speakerphone placeholder-icon" style="margin-left: -2px; padding-right:3px;"></i>
+  			<input type="text" placeholder="Title">
+  		</label>
+  		<div class="row" style="padding:0px;">
+  			<div class="col" style="padding:0px; padding-top:1px;">
+		  		<label class="item item-input">
+		  			<i class="icon ion-calendar placeholder-icon" style="margin-right:3px;"></i>
+		  			<input type="text" placeholder="Date">
+		  		</label>
+	  		</div>
+		  	<div class="col" style="padding:0px; padding-top:1px;">
+		  		<label class="item item-input">
+		  			<i class="icon ion-clock placeholder-icon" style="margin-right:3px;"></i>
+		  			<input type="text" placeholder="Time">
+		  		</label>
+		  	</div>
+	  	</div>
+	  	<label class="item item-input">
+  			<i class="icon ion-location placeholder-icon p5" style="margin-right:3px;"></i>
+  			<input type="text" placeholder="Location">
+  		</label>
+  		<label class="item item-input">
+  			<i class="icon ion-pricetag placeholder-icon" style="margin-top:-20px;"></i>
+  			<textarea placeholder="Description"></textarea>
+  		</label>
+  	</div>
+  	<div class="item item-divider">
+   		Permissions
+  	</div>
+  	<div class="list">
+  		<div class="row" style="padding:0px;">
+  			<div class="col" style="padding:0px; padding-top:0px;">
+  		<label class="item item-radio">
+			<input type="radio" name="group">
+	    		<div class="item-content">
+	      			Public
+	    		</div>
+	    	<i class="radio-icon ion-checkmark"></i>
+	  	</label>
+	  </div>
+	  <div class="col" style="padding:0px; padding-top:0px;">
+	  	<label class="item item-radio">
+			<input type="radio" name="group">
+	    		<div class="item-content">
+	      			Private
+	    		</div>
+	    	<i class="radio-icon ion-checkmark"></i>
+	  	</label>
+	  </div>
+	</div>
+	<li class="item item-checkbox">
+		<label class="checkbox">
+	    	<input type="checkbox">
+		</label>
+			Allow guests to invite.
+	</li>
+	</div>
+	<button ng-click="createEvent()" class="button button-block button-calm">
+		Create Event
+	</button>
+
+  </ion-content>
+</ion-view>
