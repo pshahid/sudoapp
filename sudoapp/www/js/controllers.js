@@ -5,7 +5,10 @@ angular.module('starter.controllers', [])
 })
 
 .controller('EventDetailCtrl', function($scope, $stateParams, Events) {
-  $scope.event = Events.get($stateParams.eventId);
+  $scope.event = Events.get($stateParams.eventId)
+  $scope.range = function(n) {
+  	return new Array(n);
+  };
 })
 
 .controller('FriendsCtrl', function($scope, Friends) {
