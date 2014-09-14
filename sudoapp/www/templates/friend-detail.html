@@ -9,9 +9,34 @@
 	  <ion-item type="item-text-wrap" class="item item-thumbnail-left item-icon-right">
 		<img ng-src="{{friend.avatar}}" style="height:50px; width:50px;">
 	  	<div>
-	   	<h1 style="font-weight:bold;">{{friend.name}}</h1>
-		<i class="icon" ng-class="{'ion-social-facebook facebook': friend.from=='Facebook', 'ion-social-instagram instagram': friend.from=='Instagram'}" style="opacity:0.75;"></i>
+		   	<h1 style="font-weight:bold;">{{friend.name}}</h1>
+			<i class="icon" ng-class="{'ion-social-facebook facebook': friend.from=='Facebook', 'ion-social-instagram instagram': friend.from=='Instagram'}" style="opacity:0.75;"></i>
 		</div>
 	  </ion-item>
+	<div class="item item-divider">
+		About
+	</div>
+	    <a class="item">
+	    	<i class="icon ion-star" style="margin-left: -2px; padding-right:1px;"></i>{{friend.rating}}
+	  	</a>
+	  	<a class="item">
+	    	<i class="icon ion-location" style="padding-right:3px;"></i>{{friend.location}}
+	  	</a>
+	<div class="item item-divider">
+		Contact
+	</div>
+		<a class="item">
+	    	<i class="icon ion-ios7-telephone" style="padding-right:3px;"></i>{{friend.phone}}
+		</a>
+		<a class="item">
+	    	<i class="icon ion-social-instagram" style="padding-right:3px;"></i>{{friend.instagram}} 
+	  	</a>
+	  	<a class="item">
+	    	<i class="icon ion-social-twitter" style="padding-right:1px;"></i>{{friend.twitter}}
+	  	</a>
+	    <a class="item">
+	    	<i class="icon ion-email" style="padding-right:3px;"></i>{{friend.email}}
+	  	</a>
+
   </ion-content>
 </ion-view>

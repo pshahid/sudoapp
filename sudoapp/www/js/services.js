@@ -8,9 +8,42 @@ angular.module('starter.services', [])
 
   // Some fake testing data
   var friends = [
-    { id: 0, name: 'Ron Ratatata', from: 'Instagram', avatar: 'img/avatars/ronak.jpg' },
-    { id: 1, name: 'Luke Borrows', from: 'Facebook', avatar: 'img/avatars/luke.jpg' },
-    { id: 2, name: 'Ryan Scrolls', from: 'Instagram', avatar: 'img/avatars/ryry.jpg' }
+    { 
+        id: 0, 
+        name: 'Ron Ratatata', 
+        from: 'Instagram',
+        rating: '6/10',
+        phone: '888 999 1000',
+        instagram: '@baron',
+        twitter: '@cyborgatheart',
+        email: 'thebaron@cofc.edu', 
+        avatar: 'img/avatars/ronak.jpg',
+        location: 'Charleston, SC' 
+    },
+    { 
+        id: 1, 
+        name: 'Luke Borrows', 
+        from: 'Facebook', 
+        rating: '1/10',
+        phone: '878 947 2480',
+        instagram: '@gopher',
+        twitter: '@volunteermonkey',
+        email: 'burrows@cofc.edu', 
+        avatar: 'img/avatars/luke.jpg',
+        location: 'Rock Hill, SC'  
+    },
+    { 
+        id: 2, 
+        name: 'Ryan Scrolls', 
+        from: 'Instagram', 
+        rating: '7/10',
+        phone: '123 456 7891',
+        instagram: '@theyounger',
+        twitter: '@sprowles',
+        email: 'scrolls@cofc.edu', 
+        avatar: 'img/avatars/ryry.jpg',
+        location: 'Summerville, SC'  
+    }
   ];
 
   return {
@@ -32,7 +65,18 @@ angular.module('starter.services', [])
                 { 
                     id: 0, 
                     name: 'Happy Hour', 
-                    host: 'Paul Shahid', 
+                    host: { 
+                        id: 2, 
+                        name: 'Paul Shahid', 
+                        from: 'Facebook', 
+                        rating: '10/10 would party again',
+                        phone: '123 456 7891',
+                        instagram: '@thebae',
+                        twitter: '@pjs',
+                        email: 'pjs@cofc.edu', 
+                        avatar: 'img/avatars/pjs.jpg',
+                        location: 'Charleston, SC'  
+                    }, 
                     time: '5:00pm', 
                     date: 'Sep 14', 
                     place: 'Big Gun', 
@@ -49,7 +93,18 @@ angular.module('starter.services', [])
                 { 
                     id: 1, 
                     name: 'Hang Out', 
-                    host: 'Ron Ratatata', 
+                    host: { 
+                        id: 0, 
+                        name: 'Ron Ratatata', 
+                        from: 'Instagram',
+                        rating: '6/10',
+                        phone: '888 999 1000',
+                        instagram: '@baron',
+                        twitter: '@cyborgatheart',
+                        email: 'thebaron@cofc.edu', 
+                        avatar: 'img/avatars/ronak.jpg',
+                        location: 'Charleston, SC' 
+                    }, 
                     time: '9:00pm', 
                     date: 'Sep 14', 
                     place: 'Smoking Lamp', 
@@ -60,7 +115,18 @@ angular.module('starter.services', [])
                 { 
                     id: 2, 
                     name: 'Get Drunk', 
-                    host: 'Luke Burrows', 
+                    host: { 
+                        id: 1, 
+                        name: 'Luke Borrows', 
+                        from: 'Facebook', 
+                        rating: '1/10',
+                        phone: '878 947 2480',
+                        instagram: '@gopher',
+                        twitter: '@volunteermonkey',
+                        email: 'burrows@cofc.edu', 
+                        avatar: 'img/avatars/luke.jpg',
+                        location: 'Rock Hill, SC'  
+                    },
                     time: '7:00pm', 
                     date: 'Sep 14', 
                     place: 'Bier Garten', 
@@ -76,7 +142,18 @@ angular.module('starter.services', [])
                 { 
                     id: 3, 
                     name: 'Barcamp', 
-                    host: 'Ryan Scrolls', 
+                    host: { 
+                        id: 2, 
+                        name: 'Ryan Scrolls', 
+                        from: 'Instagram', 
+                        rating: '7/10',
+                        phone: '123 456 7891',
+                        instagram: '@theyounger',
+                        twitter: '@sprowles',
+                        email: 'scrolls@cofc.edu', 
+                        avatar: 'img/avatars/ryry.jpg',
+                        location: 'Summerville, SC'  
+                    }, 
                     time: '8:00am', 
                     date: 'Nov 14', 
                     place: 'Harbor Walk', 
