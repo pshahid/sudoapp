@@ -1,5 +1,25 @@
 <ion-view title="Settings">
   <ion-content>
-    <h1>Will have settings here.</h1>
+  <form action ="">
+    <br>
+<!--     <button class ="button-block button icon-left ion-android-friends liked"
+     ng-class="{'icon ion-android-friends liked': liked, 'icon ion-android-friends unliked':!liked}" ng-click="liked=!liked">
+   </button> -->
+   <button class = "button button-block" ng-click = "liked=!liked" >
+  <!--   <div class="item item-icon-left item-text-wrap"> -->
+          <i id="like" ng-class="{'icon ion-android-friends liked': liked, 'icon ion-android-friends unliked':!liked}" ng-click="liked=!liked"></i>
+		<font size = "3">Import contacts from phone
+   <!--    </div> -->
+    </button>
+
+     <button ng-click="Disconnect()" style="background-color:#3b5998;color:#efefef" class="center button ion-social-facebook button-block">
+       Disconnect from Facebook
+    </button>
+     <button ng-click="Disconnect()" style="background-color:#517fa4;color:#efefef" class="center button ion-social-instagram button-block">
+      Disconnect from Instagram
+    </button>
+     <button ng-click="Deactive()" style="background-color:#ff0000" class="center button button-calm button-block">
+      Deactivate Account
+    </button>
   </ion-content>
 </ion-view>
