@@ -4,6 +4,10 @@
   navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top">
+  <!-- Stupid Blank Fix Tab -->
+  <ion-tab href="#/tab/events">
+    <ion-nav-view name="tab-events"></ion-nav-view>
+  </ion-tab>
 
   <!-- Home/Event Tab -->
   <ion-tab title="Events" icon="icon ion-ios7-wineglass" href="#/tab/events">
@@ -17,13 +21,13 @@
   </ion-tab>
 
   <!-- New Event Tab -->
-<!--   <ion-tab title="Create Event" icon="icon ion-plus-round" href="#/tab/events">
-    <ion-nav-view name="tab-events"></ion-nav-view>
-  </ion-tab> -->
+  <ion-tab title="Create Event" icon="icon ion-plus-round" href="#/tab/create">
+    <ion-nav-view name="tab-create"></ion-nav-view>
+  </ion-tab>
 
 
   <!-- Settings Tab -->
-  <ion-tab title="Settings" icon="icon ion-ios7-gear" href="#/tab/settings">
+  <ion-tab href="#/tab/settings">
     <ion-nav-view name="tab-settings"></ion-nav-view>
   </ion-tab>
 

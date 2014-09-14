@@ -26,6 +26,12 @@ angular.module('starter.controllers', [])
   }
 })
 
+.controller('CreateCtrl', function($scope, $location) {
+	$scope.createEvent = function() {
+		$location.url('/tab/events');
+	}
+})
+
 .controller('SettingsCtrl', function($scope) {
 	// $scope.doSomething = function();
 });
