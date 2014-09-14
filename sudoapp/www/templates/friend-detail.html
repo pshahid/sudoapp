@@ -4,15 +4,14 @@
   The FriendsCtrl pulls data from the Friends service (service.js)
   The Friends service returns an array of friend data
 -->
-<ion-view title="{{friend.name}}">
-  <ion-content has-header="true" padding="true">
-  <div class="item-thumbnail-left">
-            <img ng-src="{{friend.avatar}}">
-            <div style="padding:0px;">
-              <h2 style="font-weight:bold; font-size:20px;">{{friend.name}}</h2>
-              <p>{{evt.date}} {{evt.time}} @ {{evt.place}}</p>
-              <span class="badge badge-balanced">{{evt.guests}}</span>
-            </div>
-          </div>
+<ion-view title="Friend Details">
+  <ion-content has-header="true" padding="false">
+	  <ion-item type="item-text-wrap" class="item item-thumbnail-left item-icon-right">
+		<img ng-src="{{friend.avatar}}" style="height:50px; width:50px;">
+	  	<div>
+	   	<h1 style="font-weight:bold;">{{friend.name}}</h1>
+		<i class="icon" ng-class="{'ion-social-facebook facebook': friend.from=='Facebook', 'ion-social-instagram instagram': friend.from=='Instagram'}" style="opacity:0.75;"></i>
+		</div>
+	  </ion-item>
   </ion-content>
 </ion-view>
