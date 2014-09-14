@@ -1,47 +1,26 @@
 <ion-view title="Events">
   <ion-content>
-    	<div class="item item-divider" padding="false">
-		  Hosted by You
-		</div>
-		<ion-item ng-repeat="event in events" class="item-text-wrap" style="padding-bottom:0px; padding-left:0px;">
-			<a href="#/tab/events/{{event.id}}">
-		      <div class="item-thumbnail-left"><img ng-src="{{event.avatar}}">
-		      <div style="padding:0px;">
-			      <h2 style="font-weight:bold; font-size:20px;">{{event.name}}</h2>
-			      <p>{{event.date}} {{event.time}} @ {{event.place}}</p>
-			      <span class="badge badge-balanced">{{event.guests}}</span>
-		  		</div>
-		  		</div>
-		    </a>
-		</ion-item>
-		<div class="item item-divider">
-	    	Invited To
-	  	</div>
-	  	<ion-item ng-repeat="event in events" class="item-text-wrap" style="padding-bottom:0px; padding-left:0px;">
-            <a href="#/tab/events/{{event.id}}">
-              <div class="item-thumbnail-left"><img ng-src="{{event.avatar}}">
-              <div style="padding:0px;">
-                  <h2 style="font-weight:bold; font-size:20px;">{{event.name}}</h2>
-                  <p>{{event.date}} {{event.time}} @ {{event.place}}</p>
-                  <span class="badge badge-balanced">{{event.guests}}</span>
-                </div>
-                </div>
-            </a>
-        </ion-item>
-		<div class="item item-divider">
-	    	Public
-	  	</div>
-	  	<ion-item ng-repeat="event in events" class="item-text-wrap" style="padding-bottom:0px; padding-left:0px;">
-            <a href="#/tab/events/{{event.id}}">
-              <div class="item-thumbnail-left"><img ng-src="{{event.avatar}}">
-              <div style="padding:0px;">
-                  <h2 style="font-weight:bold; font-size:20px;">{{event.name}}</h2>
-                  <p>{{event.date}} {{event.time}} @ {{event.place}}</p>
-                  <span class="badge badge-balanced">{{event.guests}}</span>
-                </div>
-                </div>
-            </a>
-        </ion-item>
+    <div ng-repeat-start="category in events" class="item item-divider" padding="false">
+      {{category.category}}
+    </div>
+
+    <div ng-repeat-end>
+      <ion-item ng-repeat="evt in category.events" class="item-text-wrap" style="padding-bottom:0px; padding-left:0px;">
+
+        <a href="#/tab/events/{{evt.id}}">
+          <div class="item-thumbnail-left">
+            <img ng-src="{{evt.avatar}}">
+            <div style="padding:0px;">
+              <h2 style="font-weight:bold; font-size:20px;">{{evt.name}}</h2>
+              <p>{{evt.date}} {{evt.time}} @ {{evt.place}}</p>
+              <span class="badge badge-balanced">{{evt.guests}}</span>
+            </div>
+          </div>
+        </a>
+
+      </ion-item>
+    </div>
+
   </ion-content>
 </ion-view>
 
