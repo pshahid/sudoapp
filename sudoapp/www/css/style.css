@@ -28,3 +28,10 @@ a {
 .instagram{
   color: #517fa4;
 }
+i.icon.ion-android-friends.unliked{
+    font-size:30px;
+  }
+i.icon.ion-android-friends.liked{
+    font-size:30px;
+    color : blue;
+  }
