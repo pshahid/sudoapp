@@ -8,9 +8,9 @@ angular.module('starter.services', [])
 
   // Some fake testing data
   var friends = [
-    { id: 1, name: 'Ron Ratatata', from: 'Instagram', avatar: 'img/avatars/ronak.jpg' },
-    { id: 2, name: 'Luke Borrows', from: 'Facebook', avatar: 'img/avatars/luke.jpg' },
-    { id: 3, name: 'Ryan Scrolls', from: 'Instagram', avatar: 'img/avatars/ryry.jpg' }
+    { id: 0, name: 'Ron Ratatata', from: 'Instagram', avatar: 'img/avatars/ronak.jpg' },
+    { id: 1, name: 'Luke Borrows', from: 'Facebook', avatar: 'img/avatars/luke.jpg' },
+    { id: 2, name: 'Ryan Scrolls', from: 'Instagram', avatar: 'img/avatars/ryry.jpg' }
   ];
 
   return {
