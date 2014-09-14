@@ -33,7 +33,9 @@ angular.module('starter.controllers', [])
 })
 
 .controller('SettingsCtrl', function($scope) {
-	// $scope.doSomething = function();
+	// $state.transitionTo("settings");
 });
+
+
 
 

@@ -34,6 +34,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       abstract: true,
       templateUrl: "templates/tabs.html"
     })
+    
+      .state('settings', {
+      url: "/settings",
+      abstract: true,
+      templateUrl: "templates/tab-settings.html",
+      controller: "SettingsCtrl"
+    })
+
 
     // Each tab has its own nav history stack:
 
@@ -89,17 +97,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/login',
       templateUrl: 'templates/login-page.html',
       controller: 'LoginPageCtrl'
-    })
-
-    .state('tab.settings', {
-      url: '/settings',
-      views: {
-        'tab-settings': {
-          templateUrl: 'templates/tab-settings.html',
-          controller: 'SettingsCtrl'
-        }
-      }
     });
+
+    // .state('tab.settings', {
+    //   url: '/settings',
+    //   views: {
+    //     'tab-settings': {
+    //       templateUrl: 'templates/tab-settings.html',
+    //       controller: 'SettingsCtrl'
+    //     }
+    //   }
+    // });
 
   // if none of the above states are matched, use this as the fallback
 

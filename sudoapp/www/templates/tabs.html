@@ -3,21 +3,12 @@
   Each tab's child <ion-nav-view> directive will have its own 
   navigation history that also transitions its views in and out.
 -->
+
 <ion-tabs class="tabs-icon-top">
-  <!-- Stupid Blank Fix Tab -->
-  <ion-tab href="#/tab/events">
-    <ion-nav-view name="tab-events"></ion-nav-view>
-  </ion-tab>
 
   <!-- Home/Event Tab -->
   <ion-tab title="Events" icon="icon ion-ios7-wineglass" href="#/tab/events">
     <ion-nav-view name="tab-events"></ion-nav-view>
-  </ion-tab>
-
-
-  <!-- Friends Tab -->
-  <ion-tab title="Friends" icon="icon ion-ios7-people" href="#/tab/friends">
-    <ion-nav-view name="tab-friends"></ion-nav-view>
   </ion-tab>
 
   <!-- New Event Tab -->
@@ -25,11 +16,13 @@
     <ion-nav-view name="tab-create"></ion-nav-view>
   </ion-tab>
 
-
-  <!-- Settings Tab -->
-  <ion-tab data-tap-disabled="true" href="#/tab/settings">
-    <ion-nav-view name="tab-settings"></ion-nav-view>
+  <!-- Friends Tab -->
+  <ion-tab title="Friends" icon="icon ion-ios7-people" href="#/tab/friends">
+    <ion-nav-view name="tab-friends"></ion-nav-view>
   </ion-tab>
 
-
+  <!-- Settings Tab -->
+  <!-- ion-tab title="Settings" icon="icon ion-ios7-gear" href="#/tab/settings">
+    <ion-nav-view name="tab-settings"></ion-nav-view>
+  </ion-tab> -->
 </ion-tabs>
