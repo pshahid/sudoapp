@@ -35,3 +35,19 @@ i.icon.ion-android-friends.liked{
     font-size:30px;
     color : blue;
   }
+
+.tabs{
+  color: #427676;
+}
+
+.button.button-calm
+{
+  background-color: #3F9A82;
+  border-color: #3F9A82;
+  font-size: 18px;
+}
+
+.bar.bar-balanced .title 
+{
+  font-size: 22px;
+}
