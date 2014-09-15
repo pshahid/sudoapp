@@ -80,7 +80,7 @@ angular.module('starter.services', [])
                     time: '5:00pm', 
                     date: 'Sep 14', 
                     place: 'Big Gun', 
-                    guests: '4',
+                    guests: 4,
                     description: 'Guys the burgers are half off until 6. They are delicious and we should go eat them.',
                     avatar: 'img/avatars/pjs.jpg'
                 }
@@ -108,7 +108,7 @@ angular.module('starter.services', [])
                     time: '9:00pm', 
                     date: 'Sep 14', 
                     place: 'Smoking Lamp', 
-                    guests: '2',
+                    guests: 2,
                     description: 'none',
                     avatar: 'img/avatars/ronak.jpg' 
                 },
@@ -130,7 +130,7 @@ angular.module('starter.services', [])
                     time: '7:00pm', 
                     date: 'Sep 14', 
                     place: 'Bier Garten', 
-                    guests: '19',
+                    guests: 19,
                     description: 'none',
                     avatar: 'img/avatars/luke.jpg' 
                 }
@@ -157,7 +157,7 @@ angular.module('starter.services', [])
                     time: '8:00am', 
                     date: 'Nov 14', 
                     place: 'Harbor Walk', 
-                    guests: '8',
+                    guests: 8,
                     description: 'none',
                     avatar: 'img/avatars/ryry.jpg'
                 }
